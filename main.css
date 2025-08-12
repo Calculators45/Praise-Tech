@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+*::selection {
+    color: #fff;
+    background-color: seagreen;
+}
+
+
+.bg-home {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), black), url(Assets/christin-hume-mfB1B1s4sMc-unsplash.jpg);
+}
+
+
+.card > img {
+    object-fit: cover;
+    height: 200px !important;
+}
