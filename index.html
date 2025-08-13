@@ -21,7 +21,7 @@
 <body>
   <!-- This is the navigation bar -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-pop">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Praise Tech</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -94,7 +94,7 @@
 
             <div>
               <button class="btn btn-outline-success">Get Started</button>
-              <button class="btn btn-success">Register Now</button>
+              <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
             </div>
           </div>
         </div>
@@ -410,11 +410,75 @@
 
       <div class="container-fluid bg-success text-light py-5 text-center ">
 
-        <button class="btn btn-outline-light btn-lg rounded-pill">Register Now</button>
+        <button class="btn btn-outline-light btn-lg rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
 
       </div>
 
     </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Register Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form method="post">
+
+        <label for="Name" class="mt-4">Name:</label>
+        <input type="text" name="Name" id="Name" class="form-control" required>
+
+        <label for="Email_Address" class="mt-4">Email:</label><br>
+        <input type="email" class="form-control" name="Email_Address" required>
+
+        <label for="Age" class="mt-4">Age:</label><br>
+        <input type="number" name="Age" id="Age" class="form-control" required>
+
+        <label for="Phone_Number" class="mt-4">Phone Number:</label>
+        <input type="tel" name="Phone_Number" id="Phone_Number" class="form-control" required>
+
+        <label for="Location" class="mt-4">Location</label>
+        <input type="text" name="Location" id="Location" class="form-control">
+
+        <label for="Location_Of_Course" class="mt-4">Location Of Course:</label><br>
+        <input type="radio" name="Location_Of_Course" id="On_Site"> On site<br>
+        <input type="radio" name="Location_Of_Course" id="Online"> Online<br>
+
+        <label for="Gender" class="mt-4">Gender:</label>
+        <select name="Gender" id="Gender" class="form-control">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
+
+        <label for="Choice_Of_Course" class="mt-4">Choice of Course:</label>
+        <select name="Choice_Of_Course" id="Choice_Of_Course" class="form-control" required>
+          <option value="Web_Development">Web Development</option>
+          <option value="Scratch">Scratch</option>
+          <option value="Android_Development">Android Development</option>
+          <option value="Data_Analysis">Data Analysis</option>
+          <option value="UI__UX">UI/UX</option>
+          <option value="Graphic_Design">Graphic Design</option>
+          <option value="Content_Creation">Content Creation</option>
+          <option value="Animation">Animaion</option>
+          <option value="Robotics">Robotics</option>
+        </select>
+
+        
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success" data-bs-dismiss="modal">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </main>
 
 

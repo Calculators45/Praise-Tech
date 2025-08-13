@@ -29,3 +29,7 @@
     transform: scale(1.05);
     box-shadow: 0 0 3px 5px #333;
 }
+
+input[type="radio"] {
+    accent-color: seagreen;
+}
